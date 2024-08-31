@@ -1,3 +1,49 @@
+<div class="modal-body">
+    <form>
+        <!--  test-->
+
+        <!-- test-->
+        <!-- <div class="mb-3">
+
+            <input type="text" class="form-control" id="recipient-name" placeholder="Username">
+        </div>
+        <div class="mb-3">
+
+            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+        </div>
+        <div class="mb-3">
+
+            <input type="password" class="form-control" id="recipient-name" placeholder="Password">
+        </div> -->
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

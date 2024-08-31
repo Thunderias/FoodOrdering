@@ -180,7 +180,7 @@
         <div class="container-fluid d-flex align-items-center">
             <h1 class="d-flex align-items-center fs-4 text-white mb-0">
                 <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
-                Administration
+                Food Administration
             </h1>
             <a href="../index.html" class="ms-auto link-light" hreflang="ar">Sign Out</a>
         </div>
@@ -201,6 +201,28 @@
                                 href="customerScope.html">Customers</a>
                         </li>
 
+                    </ul>
+                </li>
+                <li class="my-2">
+                    <button type="button" class="btn d-inline-flex align-items-center collapsed border-0"
+                        data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse"
+                        aria-controls="forms-collapse">Food</button>
+                    <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="foodScope.html">All Food</a>
+                        </li>
+                        <!-- <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#disabled-forms">Disabled
+                                forms</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#sizing">Sizing</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#input-group">Input
+                                group</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#floating-labels">Floating labels</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#validation">Validation</a></li> -->
                     </ul>
                 </li>
                 <li class="my-2">
@@ -288,75 +310,159 @@
     </aside>
     <div class="bd-cheatsheet container-fluid bg-body">
         <section id="content">
-            <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Admins Portal</h2>
+            <!-- <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Food Portal</h2> -->
+
 
             <article class="my-3" id="tables">
                 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-bs-whatever="@getbootstrap">Add Admin</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalFood" data-bs-whatever="@getbootstrap">Add Food</button>
 
 
                 </div>
 
                 <div>
+                    <!--  test-->
+                    <div class="alert alert-success" role="alert">
+                        <h6>List of Registered Foods</h6>
+                    </div>
+                    <!-- <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+
+                            <form class="row g-3">
+                                <div class="col-md-4">
+
+                                    <input type="text" class="form-control" id="validationServer01"
+                                        placeholder="Food name" required>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <select class="form-select" id="validationServer04" required>
+                                        <option selected disabled value="">Choose Type...</option>
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-select" id="validationServer04" required>
+                                        <option selected disabled value="">Choose Status...</option>
+                                        <option>Available</option>
+                                        <option>Not Available</option>
+
+                                    </select>
+
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="Description"></textarea>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Tshs</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest Tanzania shilling)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div> -->
+                    <!-- test-->
                     <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
                             <table id="example" class="table table-striped" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
-                                        <th>Address</th>
-                                        <th>Phonenumber</th>
-                                        <th>Action</th>
+                                        <th>Type</th>
+                                        <th>description</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Booking</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Mombasa</td>
-                                        <td>10</td>
-                                        <td>2/10/2024</td>
+                                        <td>Pilau</td>
+                                        <td>Lunch</td>
+                                        <td>Kitoweo ni Kuku na Fruits</td>
+                                        <td>Tsh 2000</td>
+                                        <td>
+                                            <span class="badge text-bg-secondary"> Available</span>
+                                        </td>
                                         <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-danger">Suspend</button>
-                                                <button type="button" class="btn btn-warning">View</button>
-
+                                                <button type="button" class="btn btn-danger btn-sm">View</button>
+                                                <button type="button" class="btn btn-warning btn-sm">Suspend</button>
+                                                <button type="button" class="btn btn-success btn-sm">Update</button>
                                             </div>
                                         </td>
 
                                     </tr>
                                     <tr>
-                                        <td>Mbuyuni</td>
-                                        <td>15</td>
-                                        <td>17/10/2024</td>
+                                        <td>Biriani</td>
+                                        <td>Lunch</td>
+                                        <td>Kitoweo ni Nyama ya Kondoo</td>
+                                        <td>Tsh 3500</td>
+                                        <td>
+                                            <span class="badge text-bg-secondary"> Available</span>
+                                        </td>
                                         <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-danger">Suspend</button>
-                                                <button type="button" class="btn btn-warning">View</button>
+                                                <button type="button" class="btn btn-danger btn-sm">View</button>
+                                                <button type="button" class="btn btn-warning btn-sm">Suspend</button>
+                                                <button type="button" class="btn btn-success btn-sm">Update</button>
                                             </div>
                                         </td>
 
                                     </tr>
                                     <tr>
-                                        <td>Ukutani</td>
-                                        <td>27</td>
-                                        <td>20/10/2024</td>
+                                        <td>Chipi Pweza</td>
+                                        <td>Dinner</td>
+                                        <td>Saladi, Tomato na Pilipili</td>
+                                        <td>Tsh 6000</td>
+                                        <td>
+                                            <span class="badge text-bg-warning">Not available</span>
+                                        </td>
                                         <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-danger">Suspend</button>
-                                                <button type="button" class="btn btn-warning">View</button>
+                                                <button type="button" class="btn btn-danger btn-sm">View</button>
+                                                <button type="button" class="btn btn-warning btn-sm">Suspend</button>
+                                                <button type="button" class="btn btn-success btn-sm">Update</button>
                                             </div>
                                         </td>
 
                                     </tr>
                                     <tr>
-                                        <td>Gombani</td>
-                                        <td>25</td>
-                                        <td>18/10/2024</td>
+                                        <td>Maziwa na Andazi</td>
+                                        <td>Breakfast</td>
+                                        <td>Tende na Mayai</td>
+                                        <td>Tsh 3300</td>
+                                        <td>
+                                            <span class="badge text-bg-secondary"> Available</span>
+                                        </td>
                                         <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-danger">Suspend</button>
-                                                <button type="button" class="btn btn-warning">View</button>
+                                                <button type="button" class="btn btn-danger btn-sm">View</button>
+                                                <button type="button" class="btn btn-warning btn-sm">Suspend</button>
+                                                <button type="button" class="btn btn-success btn-sm">Update</button>
                                             </div>
                                         </td>
 
@@ -365,10 +471,11 @@
                                 <tfoot>
                                     <tr>
                                         <th>Name</th>
-                                        <th>Address</th>
-                                        <th>Phonenumber</th>
-                                        <th>Action</th>
-
+                                        <th>Type</th>
+                                        <th>description</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Booking</th>
 
                                     </tr>
                                 </tfoot>
@@ -384,48 +491,87 @@
                 </div>
             </article>
 
-            <!-- modal ya kuadd admin-->
-            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-             -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">New Admin Registration</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <!-- <label for="recipient-name" class="col-form-label">Username:</label> -->
-                                    <input type="text" class="form-control" id="recipient-name" placeholder="Username">
-                                </div>
-                                <div class="mb-3">
-                                    <!-- <label for="recipient-name" class="col-form-label">Email:</label> -->
-                                    <input type="text" class="form-control" id="recipient-name" placeholder="Email">
-                                </div>
-                                <div class="mb-3">
-                                    <!-- <label for="recipient-name" class="col-form-label">Password:</label> -->
-                                    <input type="password" class="form-control" id="recipient-name"
-                                        placeholder="Password">
-                                </div>
+        </section>
+        <!-- section ya chini natafuta moda nzuri-->
 
-                            </form>
+        <!-- modal ya kuadd admin-->
+
+        <div class="modal fade" id="exampleModalFood" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">New Food Registration</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="validationServer01"
+                                        placeholder="Food name" required>
+                                </div>
+                                <div class="col-md-6 ms-auto">
+                                    <select class="form-select" id="validationServer04" required>
+                                        <option selected disabled value="">Choose Type...</option>
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <select class="form-select" id="validationServer04" required>
+                                        <option selected disabled value="">Choose Status...</option>
+                                        <option>Available</option>
+                                        <option>Not Available</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-md-6 ms-auto">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">Tshs</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest Tanzania shilling)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 ms-auto">
+                                    <div class="mb-3">
+                                        <!-- <label for="formFile" class="form-label">Default file input example</label> -->
+                                        <input class="form-control" type="file" id="formFile" placeholder="Image">
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
-            <!-- hadi hapa -->
+        </div>
+        <!-- hadi hapa -->
 
-        </section>
-
+        <!--  mwisho wa modal ya kuadd food-->
 
     </div>
 
